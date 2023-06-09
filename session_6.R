@@ -56,7 +56,7 @@ precis(m2_intro)
 
 # load and prepare data 
 
-shaq <- read_csv("data/shaq.csv")
+shaq <- read_csv("shaq.csv")
 dat <- list(FGA = shaq$FGA,
             FTA = shaq$FTA, 
             PTS = shaq$PTS,
@@ -278,3 +278,4 @@ m4 <- quap(
   ),
   data = dat)
 precis(m4)
+
